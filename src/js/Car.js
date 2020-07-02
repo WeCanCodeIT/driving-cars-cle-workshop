@@ -1,6 +1,23 @@
 class Car {
     constructor() {
         this.speed = 0;
+        this.distanceTravelled = 0;
+    }
+
+    getSpeed() {
+        return this.speed;
+    }
+
+    getDistanceTravelled(){
+        return this.distanceTravelled;
+    }
+
+    isSpeeding(){
+        return this.speed > 70;
+    }
+
+    isDriving(){
+        return this.speed > 0;
     }
 
     accelerate() {
@@ -9,10 +26,13 @@ class Car {
 
     brake(){
         this.speed -= 7;
+        if(this.speed < 0){
+            this.speed = 0;
+        }
     }
 
-    getSpeed() {
-        console.log(this.speed);
-        return this.speed;
+    addMile(){
+        this.distanceTravelled += 1;
     }
+
 }

@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
     <div>
         <section class="dashboard">
-            <div class="dashboard__speedometer">initial speed</div>
+            <h2>SPEED:</h2><div class="dashboard__speedometer">initial speed</div>
+            <h2>DISTANCE:</h2><div class="dashboard__odometer">initial odometer</div>
+            <h2>ALERTS:</h2><div class="dashboard__warning hidden warning">SLOW DOWN you are speeding!</div>
         </section>
         <section class="floorboard">
             <button class="floorboard__accelerator">Go Faster!</button>
-            <button class="floorboard__brake">STOP!</button>
+            <button class="floorboard__brake">Slow Down!</button>
         </section>
     </div>
 
